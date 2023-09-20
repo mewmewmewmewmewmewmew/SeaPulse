@@ -13,14 +13,15 @@ GameObject:
   - component: {fileID: 4871623750086534190}
   - component: {fileID: 4871623750086534225}
   - component: {fileID: -5621693239444647108}
-  - component: {fileID: 2113704375173152595}
+  - component: {fileID: 4591814941834739997}
+  - component: {fileID: -8959722858139722975}
   - component: {fileID: 4871623750086534186}
   - component: {fileID: 4871623750086534189}
   - component: {fileID: 2371638794311285366}
   m_Layer: 0
-  m_Name: Note 3 Person
+  m_Name: Note 1 Person
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -123,7 +124,7 @@ MonoBehaviour:
   displaceDistance: 0
   delay: 0
   randomPosition: 0
---- !u!114 &2113704375173152595
+--- !u!114 &4591814941834739997
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,6 +144,26 @@ MonoBehaviour:
   displaceDistance: 0
   delay: 0
   randomPosition: 0
+--- !u!114 &-8959722858139722975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4871623750086534224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489628447146b284188f79b76d8068ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 2252074366749659801, guid: beebeca50de2b5d448754411678dd93a, type: 3}
+  projectileCount: 1
+  fire: 0
+  isParented: 0
+  isDisplaced: 0
+  displaceDistance: 0
+  delay: 0
+  randomPosition: 0
 --- !u!114 &4871623750086534186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,10 +176,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 849d01b49be53c441a273b7bcd04eded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredNumberOfPlayers: 3
+  requiredNumberOfPlayers: 1
   numberOfPlayers: 0
-  durationOfNote: 2
-  Marked: 0
+  durationOfNote: 1
+  marked: 0
   OnStart:
     m_PersistentCalls:
       m_Calls:
@@ -201,7 +222,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2113704375173152595}
+      - m_Target: {fileID: 4591814941834739997}
+        m_TargetAssemblyTypeName: TempNoteSpawner, Assembly-CSharp
+        m_MethodName: SpawnCircularDisplace
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -8959722858139722975}
         m_TargetAssemblyTypeName: TempNoteSpawner, Assembly-CSharp
         m_MethodName: SpawnCircularDisplace
         m_Mode: 3
@@ -267,9 +300,11 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 3
+          m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
+  noteAddscore: 100
+  noteSubscore: 0
 --- !u!114 &4871623750086534189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1275bcb2d8aac4db2a8f2b84b49d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 2
+  duration: 1
   curve:
     serializedVersion: 2
     m_Curve:
@@ -465,7 +500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3
+  m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
