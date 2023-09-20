@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredNumberOfPlayers: 1
   numberOfPlayers: 0
-  durationOfNote: 1
+  durationOfNote: 0.7
   marked: 0
   OnStart:
     m_PersistentCalls:
