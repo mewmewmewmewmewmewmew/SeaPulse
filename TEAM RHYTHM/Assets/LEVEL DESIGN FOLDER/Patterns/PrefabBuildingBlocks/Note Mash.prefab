@@ -180,7 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredNumberOfPlayers: 1
   numberOfPlayers: 0
-  durationOfNote: 5
+  durationOfNote: 1
   marked: 0
   OnStart:
     m_PersistentCalls:
@@ -335,6 +335,8 @@ MonoBehaviour:
   noteAddscore: 100
   noteSubscore: 0
   mashNote: 1
+  minMash: 2
+  currentMash: 0
 --- !u!114 &8893072909971710134
 MonoBehaviour:
   m_ObjectHideFlags: 0
