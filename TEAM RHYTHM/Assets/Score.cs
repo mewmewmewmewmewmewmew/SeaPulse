@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+
 public class Score : MonoBehaviour
 {
     public Text GoodPercentageDisplay;
@@ -13,6 +15,8 @@ public class Score : MonoBehaviour
     public float score;
     public float combo;
     public float comboMultiplier;
+    public UnityEvent OnComboStart;
+    public UnityEvent OnComboEnd;
 
     void Start()
     {
@@ -37,6 +41,7 @@ public class Score : MonoBehaviour
         score-= _scoreSubValue;
         Debug.Log(score.ToString()); 
         SetText();
+        OnComboEnd.Invoke();
     }
     public void AddScore(int _scoreAddValue)
     {
@@ -53,10 +58,11 @@ public class Score : MonoBehaviour
         if (combo > 5)
         {
             ComboText.text = "COMBO!" + "\n" + combo.ToString();
+            OnComboStart.Invoke();
         }
         else
         {
-            ComboText.text = combo.ToString();
+            ComboText.text = "";
         }
 
     }

@@ -20,7 +20,7 @@ public class ScaleCurve : MonoBehaviour
 
         }
     }
-    public void CallShake()
+    public void CallScale()
     {
         start = true;
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UIElements;
 using UnityEngine.XR;
 
 public class NoteProperties : MonoBehaviour
@@ -15,11 +16,15 @@ public class NoteProperties : MonoBehaviour
     public UnityEvent OnStart;
     public UnityEvent NoteKill;
     public UnityEvent NoteMiss;
+    public UnityEvent NoteMash;
     public UnityEvent NoteTimerComplete;
     public UnityEvent SetNoteText;
     private GameObject _score;
     public int noteAddscore;
     public int noteSubscore;
+    public bool mashNote;
+    public int minMash = 1;
+    public int currentMash;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +40,6 @@ public class NoteProperties : MonoBehaviour
     void Update()
     {
 
-
     }
 
     void NoteHit()
@@ -43,10 +47,18 @@ public class NoteProperties : MonoBehaviour
         NoteKill.Invoke();
         _score.GetComponent<Score>().AddScore(noteAddscore);
     }
-    void mistake()
+    void Mistake()
     {
         NoteMiss.Invoke();
         _score.GetComponent<Score>().SubtractScore(noteSubscore);
+    }
+
+    void Mash()
+    {
+        NoteMash.Invoke();
+        _score.GetComponent<Score>().AddScore(noteAddscore);
+        currentMash++;
+
     }
 
     public void PlayerOverlapping()
@@ -68,21 +80,44 @@ public class NoteProperties : MonoBehaviour
         while (elapsedTime < durationOfNote+1f)
         {
             elapsedTime += Time.deltaTime;
+
+            if (numberOfPlayers > 0 && mashNote)
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    Mash();
+                    Debug.Log("MASH!");
+                }
+            }
             if (elapsedTime >= durationOfNote)
             {
                 Debug.Log("I happened");
-                if (numberOfPlayers != requiredNumberOfPlayers)
+                if (numberOfPlayers != requiredNumberOfPlayers && !mashNote)
                 { 
-                    mistake();
+                    Mistake();
                     Debug.Log("Ooops");
                     
                 }
-                if (numberOfPlayers == requiredNumberOfPlayers)
+                if (numberOfPlayers == requiredNumberOfPlayers && !mashNote)
                 {
                     NoteHit();
                     Debug.Log("Hit!");
                     marked = true;
                 }
+                if(mashNote)
+                {
+
+                    if (currentMash>minMash)
+                    {
+                        NoteHit();
+                    }
+                    else 
+                    {
+                        Mistake();
+                    }
+
+                }
+
             }
             yield return null;
         }
