@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 1960164844684345268}
   - component: {fileID: 1960164844684345279}
   - component: {fileID: 1960164844684345278}
+  - component: {fileID: 416150196901474101}
+  - component: {fileID: 8894331628470610656}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -52,7 +54,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1960164844684345269}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -127,11 +129,30 @@ MonoBehaviour:
   - {x: 10, y: 10, z: 0}
   - {x: 20, y: 10, z: 0}
   ArtIntegration:
-  - {fileID: 9152889649282889536, guid: b7e8597157d21784eaba02701b74fab2, type: 3}
-  - {fileID: 9152889649282889536, guid: 5051dec14a5b50642892b17193d5bd53, type: 3}
-  - {fileID: 9152889649282889536, guid: b7e8597157d21784eaba02701b74fab2, type: 3}
+  - {fileID: 1974063582640210111, guid: 41c6efec563515c41a997357e691b042, type: 3}
+  - {fileID: 241880731001992831, guid: f65493b5395b06042957dd025ae0eb74, type: 3}
+  - {fileID: 6114489358080982871, guid: f74659fe0cc895a4daf717b69eb524f1, type: 3}
   GameObjectPlayerIndex: {fileID: 0}
   PlayerIndexScript: {fileID: 0}
+  _mashableNote: {fileID: 0}
+  playerMash:
+    m_Name: Player Mash
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d66a0934-a3b5-4e18-87e7-a51afc6e4391
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: d4f135e1-b96b-4cb0-a85d-7a516f77a0a4
+      m_Path: <Gamepad>/buttonSouth
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Mash
+      m_Flags: 0
+    m_Flags: 0
+  mashPressed: 0
 --- !u!54 &1960164844684345279
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -197,8 +218,97 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: bf788967-db6e-4104-839e-19dcad72211f
     m_ActionName: Player3/4Direction[/Keyboard/numpad8,/Keyboard/numpad5,/Keyboard/numpad4,/Keyboard/numpad6,/XInputControllerWindows/leftStick/up,/XInputControllerWindows1/leftStick/up,/XInputControllerWindows/leftStick/down,/XInputControllerWindows1/leftStick/down,/XInputControllerWindows/leftStick/left,/XInputControllerWindows1/leftStick/left,/XInputControllerWindows/leftStick/right,/XInputControllerWindows1/leftStick/right]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1960164844684345268}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: MashInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2a4548de-cb6a-45d5-b03c-cb0ee4d70998
+    m_ActionName: Player1/Mash[/XInputControllerWindows/buttonSouth,/Keyboard/space,/Keyboard/shift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 33ad0d43-ab3d-49c6-9f62-1ea5ae3ba14b
+    m_ActionName: Player2/Mash[/XInputControllerWindows/buttonSouth,/Keyboard/space,/Keyboard/shift]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fbba3649-b712-4570-a95f-f75a5d3cf2b9
+    m_ActionName: Player3/Mash[/XInputControllerWindows/buttonSouth,/Keyboard/space,/Keyboard/shift]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &416150196901474101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960164844684345269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6336a3ae852303543a83a66d0e70db5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  description: 
+  OnTimerReached:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8894331628470610656}
+        m_TargetAssemblyTypeName: TempNoteSpawner, Assembly-CSharp
+        m_MethodName: SpawnCircularDisplace
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnStartTimer:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8894331628470610656}
+        m_TargetAssemblyTypeName: TempNoteSpawner, Assembly-CSharp
+        m_MethodName: SpawnCircularDisplace
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  waitTime: 0.01
+  start: 1
+--- !u!114 &8894331628470610656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960164844684345269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489628447146b284188f79b76d8068ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 8923525076022948917, guid: 9d50c2297db12b042904342e1a858204, type: 3}
+  projectileCount: 0
+  fire: 0
+  isParented: 0
+  isDisplaced: 0
+  displaceDistance: 0
+  delay: 0
+  randomPosition: 0

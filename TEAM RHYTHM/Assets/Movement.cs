@@ -18,6 +18,20 @@ public class Movement : MonoBehaviour
 
     public GameObject GameObjectPlayerIndex;
     public PlayerManager PlayerIndexScript;
+    private Vector3 lastPosition;
+    public GameObject _mashableNote;
+    public InputAction playerMash;
+
+    private void OnEnable()
+    {
+        playerMash.Enable();
+
+    }
+    private void OnDisable()
+    {
+        playerMash.Disable();
+
+    }
 
 
     // Start is called before the first frame update
@@ -36,6 +50,15 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.y > boundsUp  || transform.position.y < boundsDown || transform.position.x < boundsLeft || transform.position.x > boundsRight)
+        {
+            transform.position = lastPosition;
+        }
+
+        if(playerMash.triggered)
+        {
+            newMashInput();
+        }
         /*if(Input.GetKeyDown(up) && transform.position.y < boundsUp)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + movementInterval, transform.position.z);
@@ -74,11 +97,17 @@ public class Movement : MonoBehaviour
 
     }
 
+    private void PlayerMash_performed(InputAction.CallbackContext obj)
+    {
+        throw new System.NotImplementedException();
+    }
+
     bool isPressed = false;
 
     public void Move(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed && !isPressed /*&& transform.position.y < boundsUp +1 && transform.position.y > boundsDown-1 && transform.position.x > boundsLeft-1 && transform.position.x < boundsRight+1*/)
+        lastPosition = transform.position;
+        if (ctx.performed && !isPressed )
         {
             isPressed = true;
             Vector2 dir = ctx.ReadValue<Vector2>();
@@ -87,10 +116,41 @@ public class Movement : MonoBehaviour
             Debug.Log(dir);
             transform.position = new Vector3(transform.position.x + (dir.x * movementInterval), transform.position.y + (dir.y * movementInterval), transform.position.z);
         }
-
         if (ctx.canceled)
         {
             isPressed = false;
         }
+
+    }
+
+    public bool mashPressed = false;
+
+    public void MashInput(InputAction.CallbackContext ctx)
+    {
+        if(ctx.performed && !mashPressed)
+        {
+            mashPressed = true;
+            _mashableNote = GameObject.FindGameObjectWithTag("Mash");
+            _mashableNote.GetComponent<NoteProperties>().Mash();
+            Debug.Log("pressed");
+            if(_mashableNote=null) 
+            {
+                isPressed = false;
+                return; 
+            }
+
+        }
+        if (ctx.canceled)
+        {
+            isPressed = false;
+        }
+
+    }
+
+    public void newMashInput()
+    {
+
+        _mashableNote = GameObject.FindGameObjectWithTag("Mash");
+        _mashableNote.GetComponent<NoteProperties>().Mash();
     }
 }

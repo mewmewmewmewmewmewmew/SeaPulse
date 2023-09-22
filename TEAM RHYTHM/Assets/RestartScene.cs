@@ -8,14 +8,13 @@ public class RestartScene : MonoBehaviour
     string levelName;
     public enum SceneName
     {
-        CylinderLevel,
-        GameplayDemo,
-        GameplayDemo1,
-        GameplayDemo2,
-        GameplayDemo3,
-        GameplayDemo4,
-        GameplayDemo5,
-        GameplayDemo6
+        SplashScreen,
+        Menu,
+        Tutorial,
+        JPLD2Players,
+        JPLD3Players,
+        GameOver,
+        Splash,
     }
     public SceneName sceneName;
     public void Update()
@@ -31,36 +30,28 @@ public class RestartScene : MonoBehaviour
 
         switch (sceneName)
         {
-            case SceneName.CylinderLevel:
-                levelName = "CylinderLevel";
+            case SceneName.Menu:
+                levelName = "Menu";
                 SceneManager.LoadScene(levelName);
                 break;
-            case SceneName.GameplayDemo:
-                levelName = "GameplayDemo";
+            case SceneName.Tutorial:
+                levelName = "Tutorial";
                 SceneManager.LoadScene(levelName);
                 break;
-            case SceneName.GameplayDemo1:
-                levelName = "GameplayDemo 1";
+            case SceneName.JPLD2Players:
+                levelName = "JPLD2 Players";
                 SceneManager.LoadScene(levelName);
                 break;
-            case SceneName.GameplayDemo2:
-                levelName = "GameplayDemo 2";
+            case SceneName.JPLD3Players:
+                levelName = "JPLD3 Players";
                 SceneManager.LoadScene(levelName);
                 break;
-            case SceneName.GameplayDemo3:
-                levelName = "GameplayDemo 3";
+            case SceneName.GameOver:
+                levelName = "GameO ver";
                 SceneManager.LoadScene(levelName);
                 break;
-            case SceneName.GameplayDemo4:
-                levelName = "GameplayDemo 4";
-                SceneManager.LoadScene(levelName);
-                break;
-            case SceneName.GameplayDemo5:
-                levelName = "GameplayDemo 5";
-                SceneManager.LoadScene(levelName);
-                break;
-            case SceneName.GameplayDemo6:
-                levelName = "GameplayDemo 6";
+            case SceneName.Splash:
+                levelName = "Splash";
                 SceneManager.LoadScene(levelName);
                 break;
         }

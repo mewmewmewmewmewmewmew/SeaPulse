@@ -13,6 +13,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Mash",
+                    "type": "Button",
+                    "id": "2a4548de-cb6a-45d5-b03c-cb0ee4d70998",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -125,6 +134,39 @@
                     "action": "4Direction",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "92cb0b98-08bc-47ec-9273-d953104fa5af",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "56758ba2-dccf-424a-b497-9f44a84c45d5",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e05a93c9-640e-4a67-9f78-07feebe990ee",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -137,6 +179,15 @@
                     "type": "Value",
                     "id": "8981b695-8fe3-4d02-bb92-895642c29214",
                     "expectedControlType": "Digital",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Mash",
+                    "type": "Button",
+                    "id": "33ad0d43-ab3d-49c6-9f62-1ea5ae3ba14b",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -252,6 +303,39 @@
                     "action": "4Direction",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "fc3c7e17-d8df-4ba1-8f09-5d352ddcc2df",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "96ddb413-5c99-42a2-9484-f66ffb015b76",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f8c80d17-3202-42d5-8ef3-8e9c4e8174d3",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -266,6 +350,15 @@
                     "expectedControlType": "Digital",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Mash",
+                    "type": "Button",
+                    "id": "fbba3649-b712-4570-a95f-f75a5d3cf2b9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
                     "initialStateCheck": true
                 }
             ],
@@ -379,6 +472,39 @@
                     "action": "4Direction",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "76543f4a-8642-463f-ac7e-bec1602cca1b",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dce3f2f4-239b-4ccd-a4ac-8f2b008afb22",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5f629907-ddf0-43f1-a4a5-1ccad92d385a",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

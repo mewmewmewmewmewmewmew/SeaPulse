@@ -87,6 +87,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Note Mash
       objectReference: {fileID: 0}
+    - target: {fileID: 4871623750086534224, guid: 89ce5ce1d8d346a4ca4841e79c944c12, type: 3}
+      propertyPath: m_TagString
+      value: Mash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89ce5ce1d8d346a4ca4841e79c944c12, type: 3}
 --- !u!4 &450234870350045165 stripped
