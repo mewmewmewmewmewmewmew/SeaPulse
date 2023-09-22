@@ -25,13 +25,11 @@ public class Movement : MonoBehaviour
     {
         GameObjectPlayerIndex = GameObject.Find("PlayerManager");
         PlayerIndexScript = GameObjectPlayerIndex.GetComponent<PlayerManager>();
-        GameObjectPlayerIndex.GetComponent<PlayerManager>().AddIndex();
         //playerIndex = PlayerIndex.playerIndex;
         transform.position = startPositions[PlayerIndexScript.PlayerIndex];
-        GetComponent<MeshRenderer>().materials[0] = materials[PlayerIndexScript.PlayerIndex];
+        GameObject _GO = Instantiate(ArtIntegration[PlayerIndexScript.PlayerIndex], transform.position, ArtIntegration[PlayerIndexScript.PlayerIndex].transform.rotation, transform);
+        GameObjectPlayerIndex.GetComponent<PlayerManager>().AddIndex();
 
-            GameObject _GO = Instantiate(ArtIntegration[PlayerIndexScript.PlayerIndex], transform.position, ArtIntegration[PlayerIndexScript.PlayerIndex].transform.rotation, transform);
-        
 
     }
 

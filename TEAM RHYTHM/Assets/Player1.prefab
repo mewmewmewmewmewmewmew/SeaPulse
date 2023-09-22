@@ -127,9 +127,9 @@ MonoBehaviour:
   - {x: 10, y: 10, z: 0}
   - {x: 20, y: 10, z: 0}
   ArtIntegration:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 9152889649282889536, guid: b7e8597157d21784eaba02701b74fab2, type: 3}
+  - {fileID: 9152889649282889536, guid: 5051dec14a5b50642892b17193d5bd53, type: 3}
+  - {fileID: 9152889649282889536, guid: b7e8597157d21784eaba02701b74fab2, type: 3}
   GameObjectPlayerIndex: {fileID: 0}
   PlayerIndexScript: {fileID: 0}
 --- !u!54 &1960164844684345279
@@ -144,7 +144,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
