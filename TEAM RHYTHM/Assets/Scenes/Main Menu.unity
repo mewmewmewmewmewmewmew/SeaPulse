@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
+<<<<<<< Updated upstream
   m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+>>>>>>> Stashed changes
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1031,7 +1035,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1405171791}
   - component: {fileID: 1405171790}
+<<<<<<< Updated upstream
   - component: {fileID: 1405171792}
+=======
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: EventSystemMM
   m_TagString: Untagged
@@ -1069,6 +1076,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!114 &1405171792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,6 +1107,8 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1513583529
 GameObject:
   m_ObjectHideFlags: 0
