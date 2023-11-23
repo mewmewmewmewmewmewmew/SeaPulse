@@ -58,12 +58,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6336a3ae852303543a83a66d0e70db5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  description: 
+  description: This object spawned at the end of a song
   OnTimerReached:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1328555249108456983}
+        m_TargetAssemblyTypeName: TimerEvent, Assembly-CSharp
+        m_MethodName: OnTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnStartTimer:
     m_PersistentCalls:
       m_Calls: []
-  waitTime: 1
-  start: 0
+  waitTime: 5
+  start: 1

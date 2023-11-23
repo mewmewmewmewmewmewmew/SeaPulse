@@ -53,7 +53,7 @@ public class NoteProperties : MonoBehaviour
         _score.GetComponent<Score>().SubtractScore(noteSubscore);
     }
 
-    void Mash()
+    public void Mash()
     {
         NoteMash.Invoke();
         _score.GetComponent<Score>().AddScore(noteAddscore);
@@ -88,6 +88,7 @@ public class NoteProperties : MonoBehaviour
                     Mash();
                     Debug.Log("MASH!");
                 }
+
             }
             if (elapsedTime >= durationOfNote)
             {

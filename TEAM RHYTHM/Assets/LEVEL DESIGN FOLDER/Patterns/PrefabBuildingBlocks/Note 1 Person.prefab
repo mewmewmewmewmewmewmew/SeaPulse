@@ -69,7 +69,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 801825d2f5de52c4e85fab13d9309e9b, type: 2}
+  - {fileID: 2100000, guid: 3d97327174f2db2499fd27353436207d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -182,46 +182,10 @@ MonoBehaviour:
   marked: 0
   OnStart:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2100000, guid: 801825d2f5de52c4e85fab13d9309e9b, type: 2}
-        m_TargetAssemblyTypeName: UnityEngine.Material, UnityEngine
-        m_MethodName: CopyPropertiesFromMaterial
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: d41e627a68b9f9748ba04766b3cb398d, type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   NoteKill:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4871623750086534224}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2100000, guid: 801825d2f5de52c4e85fab13d9309e9b, type: 2}
-        m_TargetAssemblyTypeName: UnityEngine.Material, UnityEngine
-        m_MethodName: CopyPropertiesFromMaterial
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: cb8370f15e02e2940a5cce1ad3be46ae, type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 4591814941834739997}
         m_TargetAssemblyTypeName: TempNoteSpawner, Assembly-CSharp
         m_MethodName: SpawnCircularDisplace
@@ -242,6 +206,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4871623750086534224}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -285,6 +261,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  NoteMash:
+    m_PersistentCalls:
+      m_Calls: []
   NoteTimerComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -305,6 +284,9 @@ MonoBehaviour:
         m_CallState: 2
   noteAddscore: 100
   noteSubscore: 0
+  mashNote: 0
+  minMash: 1
+  currentMash: 0
 --- !u!114 &4871623750086534189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,7 +399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5406239981502309974
 RectTransform:
   m_ObjectHideFlags: 0

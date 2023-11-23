@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 2371638794311285366}
   m_Layer: 0
   m_Name: Note Mash
-  m_TagString: Untagged
+  m_TagString: Mash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 801825d2f5de52c4e85fab13d9309e9b, type: 2}
+  - {fileID: 2100000, guid: 0981d43caf94ee34c92f020d7d854d47, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -332,8 +332,8 @@ MonoBehaviour:
           m_StringArgument: A!
           m_BoolArgument: 0
         m_CallState: 2
-  noteAddscore: 100
-  noteSubscore: 0
+  noteAddscore: 50
+  noteSubscore: 100
   mashNote: 1
   minMash: 2
   currentMash: 0
@@ -617,7 +617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5406239981502309974
 RectTransform:
   m_ObjectHideFlags: 0

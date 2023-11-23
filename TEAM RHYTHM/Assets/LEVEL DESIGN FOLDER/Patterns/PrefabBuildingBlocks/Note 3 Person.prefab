@@ -68,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 801825d2f5de52c4e85fab13d9309e9b, type: 2}
+  - {fileID: 2100000, guid: edbc7bea83e61b7419d2759848a6c640, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -252,6 +252,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  NoteMash:
+    m_PersistentCalls:
+      m_Calls: []
   NoteTimerComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -270,8 +273,11 @@ MonoBehaviour:
           m_StringArgument: 3
           m_BoolArgument: 0
         m_CallState: 2
-  noteAddscore: 0
-  noteSubscore: 0
+  noteAddscore: 300
+  noteSubscore: 150
+  mashNote: 0
+  minMash: 1
+  currentMash: 0
 --- !u!114 &4871623750086534189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,7 +390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5406239981502309974
 RectTransform:
   m_ObjectHideFlags: 0
