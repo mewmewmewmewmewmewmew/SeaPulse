@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientSkyColor: {r: 0.5849056, g: 0.15726236, b: 0.25079465, a: 1}
+  m_AmbientEquatorColor: {r: 0.049839795, g: 0.20106797, b: 0.3018868, a: 1}
+  m_AmbientGroundColor: {r: 0.24528301, g: 0.21952358, b: 0.21867211, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_AmbientMode: 1
+  m_SubtractiveShadowColor: {r: 0.21181916, g: 0.26763976, b: 0.3773585, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 0cbfa8291172d264d9ffb65223ac0411, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.025326565, g: 0.017626453, b: 0.14984685, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5066,7 +5066,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 5343038943095346722, guid: 7adbbf19843f47348930db76a85ae097, type: 3}
   - {fileID: 1472630091902829213, guid: 57b6db1f3575fbb4790e5c21726c496e, type: 3}
   - {fileID: 1472630091902829213, guid: 5d421961c29c7f44f962667f8bf201aa, type: 3}
@@ -5206,6 +5205,16 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 4407946407499531589, guid: d7586405e4cd4354a8181aab776ba836, type: 3}
   - {fileID: 5213787257279326285, guid: 2a6bfebacff20994482dd83e75e2a7fc, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 174993590546832792, guid: 354aea84201251f4d911d2b3c54fc2b1, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   totalBeatCount: 0
   currentBeatCount: 0
 --- !u!1001 &427694219
@@ -8035,6 +8044,7 @@ MonoBehaviour:
   OnComboEnd:
     m_PersistentCalls:
       m_Calls: []
+  noteCounter: 0
 --- !u!1 &727749513
 GameObject:
   m_ObjectHideFlags: 0
@@ -10456,7 +10466,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941095918}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9821f8d808386ed43aaffafd15ae738f, type: 3}
   m_Name: 
@@ -15131,7 +15141,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475176052}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9821f8d808386ed43aaffafd15ae738f, type: 3}
   m_Name: 

@@ -337,6 +337,7 @@ MonoBehaviour:
   fadeDebug: 0
   currentColor: {r: 1, g: 1, b: 1, a: 0}
   ColorCurve: 0
+  fade: 0
 --- !u!114 &2371638794311285366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,7 +400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5406239981502309974
 RectTransform:
   m_ObjectHideFlags: 0

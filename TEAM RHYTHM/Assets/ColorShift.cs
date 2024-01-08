@@ -15,7 +15,7 @@ public class ColorShift : MonoBehaviour
     IEnumerator currentCoroutine;
     bool Collided;
     public float ColorCurve;
-
+    public bool fade;
     void Start()
     {
         currentCoroutine = Shifting();
@@ -46,7 +46,12 @@ public class ColorShift : MonoBehaviour
             elapsedTime += Time.deltaTime;
             ColorCurve = curve.Evaluate(elapsedTime / duration);
             shiftDebug = ColorCurve;
-            GetComponent<Renderer>().material.color = new Color(ColorCurve, ColorCurve, ColorCurve, ColorCurve);
+            if (fade)
+            {
+                GetComponent<Renderer>().material.color = new Color(0, 0, 0, ColorCurve);
+            }
+            else
+                GetComponent<Renderer>().material.color = new Color(ColorCurve, ColorCurve, ColorCurve, ColorCurve);
             yield return null;
         }
         //yield return StartCoroutine(Fading());

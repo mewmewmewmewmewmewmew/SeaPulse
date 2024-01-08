@@ -39,15 +39,15 @@ public class RestartScene : MonoBehaviour
                 SceneManager.LoadScene(levelName);
                 break;
             case SceneName.JPLD2Players:
-                levelName = "JPLD2 Players";
+                levelName = "JPLD2Players";
                 SceneManager.LoadScene(levelName);
                 break;
             case SceneName.JPLD3Players:
-                levelName = "JPLD3 Players";
+                levelName = "JPLD3Players";
                 SceneManager.LoadScene(levelName);
                 break;
             case SceneName.GameOver:
-                levelName = "GameO ver";
+                levelName = "GameOver";
                 SceneManager.LoadScene(levelName);
                 break;
             case SceneName.Splash:

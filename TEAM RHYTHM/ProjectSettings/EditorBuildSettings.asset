@@ -6,7 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Splash.unity
+    guid: c4b3a1064ccf91a42ae3e4b93ddc5d84
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: d6d65e531b6615b4fa11e5aacefb5a47
+  - enabled: 1
+    path: Assets/Scenes/JPLD2Players.unity
+    guid: 692debb8689136b42a4c235eeed8d7f2
+  - enabled: 1
+    path: Assets/Scenes/JPLD3Players.unity
+    guid: 205493f225936304899669323830a5e5
+  - enabled: 1
+    path: Assets/Scenes/GameOver 1.unity
+    guid: eec41c1ddd16ef54ca5d158157c7c69b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 52ed409402a643d4092ecadd7d186135, type: 2}

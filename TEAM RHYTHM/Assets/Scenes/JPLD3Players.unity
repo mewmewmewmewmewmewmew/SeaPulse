@@ -395,10 +395,10 @@ RectTransform:
   m_Father: {fileID: 436585953}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 259, y: -272}
-  m_SizeDelta: {x: 476.34, y: 112}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -141, y: -272}
+  m_SizeDelta: {x: 476.33997, y: 112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &106518034
 MonoBehaviour:
@@ -1265,7 +1265,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427616912}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a758aa9c48d3b5419aac279adec12bc, type: 3}
   m_Name: 
@@ -1448,6 +1448,20 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 4407946407499531589, guid: d7586405e4cd4354a8181aab776ba836, type: 3}
   - {fileID: 5213787257279326285, guid: 2a6bfebacff20994482dd83e75e2a7fc, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 174993590546832792, guid: 66bdb9d4cf3d67f4bbcd5fe6b723f5c6, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   totalBeatCount: 0
   currentBeatCount: 0
 --- !u!1 &436585949
@@ -2000,10 +2014,10 @@ MonoBehaviour:
   PlayerIndexScript: {fileID: 0}
   _mashableNote: {fileID: 0}
   playerMash:
-    m_Name: 
+    m_Name: Player Mash
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 
+    m_Id: e357e961-fa42-416e-a099-bf7afc5059a1
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -2429,6 +2443,7 @@ MonoBehaviour:
   OnComboEnd:
     m_PersistentCalls:
       m_Calls: []
+  noteCounter: 0
 --- !u!1 &747057905
 GameObject:
   m_ObjectHideFlags: 0
@@ -3074,10 +3089,10 @@ RectTransform:
   m_Father: {fileID: 436585953}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -94, y: 147}
-  m_SizeDelta: {x: 476.33997, y: 114.67}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -125, y: -101}
+  m_SizeDelta: {x: 476.33997, y: 114.66998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &874029969
 MonoBehaviour:
@@ -4057,10 +4072,10 @@ RectTransform:
   m_Father: {fileID: 436585953}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 259, y: -221}
-  m_SizeDelta: {x: 476.34, y: 112}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -138, y: -221}
+  m_SizeDelta: {x: 476.33997, y: 112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1430389575
 MonoBehaviour:
@@ -4802,10 +4817,10 @@ MonoBehaviour:
   PlayerIndexScript: {fileID: 0}
   _mashableNote: {fileID: 0}
   playerMash:
-    m_Name: 
+    m_Name: Player Mash
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 
+    m_Id: dbf5be47-81cb-4685-ab73-3752039c256a
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -4954,10 +4969,10 @@ MonoBehaviour:
   PlayerIndexScript: {fileID: 0}
   _mashableNote: {fileID: 0}
   playerMash:
-    m_Name: 
+    m_Name: Player Mash
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 
+    m_Id: 30e38687-dcda-44ff-b617-331d253ec133
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings: []
@@ -5301,7 +5316,6 @@ GameObject:
   - component: {fileID: 1976461576}
   - component: {fileID: 1976461580}
   - component: {fileID: 1976461581}
-  - component: {fileID: 1976461582}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -5457,21 +5471,6 @@ MonoBehaviour:
     m_RotationOrder: 4
   start: 0
   text: 0
---- !u!114 &1976461582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976461575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11bf20e307198c8468d167263ecbdf94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProjectileWave:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &1985877803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3539701531779155846, guid: 44810172ec394b14daee2de4b234d373, type: 3}
